@@ -13,6 +13,7 @@ El sistema simula la gestión de productos en un restaurante, permitiendo regist
 ---
 
 ## 🏗️ Estructura del proyecto
+---
 
 restaurante_app/
 ├── modelos/
