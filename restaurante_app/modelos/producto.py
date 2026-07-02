@@ -7,11 +7,11 @@ class Producto:
     def obtener_precio(self):
         return self.__precio
     
-    def cambiar_precio(self, cambiar_precio):
-        if cambiar_precio >= 0:
-            self.__precio = cambiar_precio
+    def cambiar_precio(self, nuevo_precio):
+        if nuevo_precio > 0:
+            self.__precio = nuevo_precio
         else:
-            raise ValueError("El precio no puede ser negativo.")
+            raise ValueError("El precio debe ser mayor que cero.")
 
     def mostrar_informacion(self):
         estado = "Disponible" if self.disponibilidad else "No disponible"
