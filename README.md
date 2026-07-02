@@ -13,22 +13,19 @@ El sistema simula la gestión de productos en un restaurante, permitiendo regist
 ---
 
 ## 🏗️ Estructura del proyecto
----
-
+```
 restaurante_app/
 ├── modelos/
-│ ├── init.py
-│ ├── producto.py
-│ ├── platillo.py
-│ └── bebida.py
+│   ├── __init__.py
+│   ├── producto.py
+│   ├── platillo.py
+│   └── bebida.py
 ├── servicios/
-│ ├── init.py
-│ └── restaurante.py
+│   ├── __init__.py
+│   └── restaurante.py
 ├── main.py
 └── README.md
-
-
----
+```
 
 ## 🧠 Principios de POO aplicados
 
