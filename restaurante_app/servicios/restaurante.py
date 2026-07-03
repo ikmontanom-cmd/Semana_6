@@ -5,12 +5,13 @@ class Restaurante:
 
     def __init__(self, nombre, direccion, telefono):
         """
-        Inicializa los datos del restaurante y la lista de productos.
+        Inicializa los datos del restaurante y las listas de platillos y bebidas.
         """
         self.nombre = nombre
         self.direccion = direccion
         self.telefono = telefono
-        self.productos = []
+        self.platillos = []
+        self.bebidas = []
 
     def registrar_platillo(self, platillo):
         """
@@ -19,7 +20,7 @@ class Restaurante:
         Args:
             platillo (Platillo): Objeto de tipo Platillo.
         """
-        self.productos.append(platillo)
+        self.platillos.append(platillo)
         print("\nPlatillo registrado correctamente.")
 
     def registrar_bebida(self, bebida):
@@ -29,7 +30,7 @@ class Restaurante:
         Args:
             bebida (Bebida): Objeto de tipo Bebida.
         """
-        self.productos.append(bebida)
+        self.bebidas.append(bebida)
         print("\nBebida registrada correctamente.")
 
     def mostrar_productos(self):
@@ -38,12 +39,16 @@ class Restaurante:
         """
         print("\n========= PRODUCTOS =========")
 
-        if not self.productos:
+        if not self.platillos and not self.bebidas:
             print("No existen productos registrados.")
             return
 
         print("\nDemostración del polimorfismo:\n")
 
-        for producto in self.productos:
-            print(producto.mostrar_informacion())
+        for platillo in self.platillos:
+            print(platillo.mostrar_informacion())
+            print("-" * 30)
+
+        for bebida in self.bebidas:
+            print(bebida.mostrar_informacion())
             print("-" * 30)
