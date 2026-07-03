@@ -16,9 +16,6 @@ class Restaurante:
     def registrar_platillo(self, platillo):
         """
         Registra un nuevo platillo.
-
-        Args:
-            platillo (Platillo): Objeto de tipo Platillo.
         """
         self.platillos.append(platillo)
         print("\nPlatillo registrado correctamente.")
@@ -26,9 +23,6 @@ class Restaurante:
     def registrar_bebida(self, bebida):
         """
         Registra una nueva bebida.
-
-        Args:
-            bebida (Bebida): Objeto de tipo Bebida.
         """
         self.bebidas.append(bebida)
         print("\nBebida registrada correctamente.")
@@ -46,9 +40,7 @@ class Restaurante:
         print("\nDemostración del polimorfismo:\n")
 
         for platillo in self.platillos:
-            print(platillo.mostrar_informacion())
-            print("-" * 30)
+            platillo.mostrar_informacion()
 
         for bebida in self.bebidas:
-            print(bebida.mostrar_informacion())
-            print("-" * 30)
+            bebida.mostrar_informacion()
